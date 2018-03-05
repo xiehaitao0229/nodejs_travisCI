@@ -1,5 +1,5 @@
 language:node_js
 node_js:
--8.9.4
+ -8.9.4
 after_success:
--ssh root120.78.73.247 "cd nodejs_travisCI && git pull && pm2 restart app.js --name my-server"
+ -ssh root120.78.73.247 "cd nodejs_travisCI && git pull && pm2 restart app.js --name my-server"
