@@ -1,0 +1,5 @@
+language:node_js
+node_js:
+-9.3.0
+after_success:
+-ssh root120.78.73.247 "cd nodejs_travisCI && git pull && pm2 restart app.js"
